@@ -9,7 +9,7 @@ Second try, i bought a new micro SD card (8GB) and got RT6 firmware version 2.86
 
 Third try, another mirco sd card (16 GB) in order to install the firmware (now version 2.75) and the maps. finally, instalation worked, but i ended up with Peugeot boot screen and radio keybord buttons not working (assume they were reconfigured for Peugeot cars).
 
-Now time to configure those things, and i found somthing called [MiraScripts]http://mira308sw.altervista.org/fr/index.htm), where i used RT6_MiraScripts and DatExplorer to configure the RT6 for my car and to enable extra feautres in it.
+Now time to configure those things, and i found somthing called [MiraScripts](http://mira308sw.altervista.org/fr/index.htm), where i used RT6_MiraScripts and DatExplorer to configure the RT6 for my car and to enable extra feautres in it.
 
 
 
