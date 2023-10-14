@@ -11,6 +11,11 @@ Third try, another mirco sd card (16 GB) in order to install the firmware (now v
 
 Now time to configure those things, and i found somthing called [MiraScripts](http://mira308sw.altervista.org/fr/index.htm), where i used RT6_MiraScripts and DatExplorer to configure the RT6 for my car and to enable extra feautres in it.
 
+## Warning
+Follow this work at your own risk, I guarantee nothing. It is always a good idea to back up the Miroc SD card of the RT6, and take precautions when disassembling or reassembling any part of the car.
+
+## Firmware update
+
 
 
 
