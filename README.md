@@ -14,11 +14,14 @@ Now time to configure those things, and i found something called [MiraScripts](h
 ## Warning
 Follow this work at your own risk, I guarantee nothing. It is always a good idea to back up the Miroc SD card of the RT6, and take precautions when disassembling or reassembling any part of the car.
 
+All this work was done using a Windows laptop.
+
 ## Firmware update
+### RT6 firmware backup
 If you are able to clone the internal RT6 SD card, you better do so by disassembling the radio-display (check for tutorials on how to do that, plus you will need a set of tools for the job), or get another SD card for the new firmware and keep aside the original SD card from the RT6. So when something goes wrong you will have your usual firmware and the RT6 will work safely.
 
+### RT6 user file configuration backup
 Another option is to copy some user files (configurations) that are related to your car using [MiraScripts](http://mira308sw.altervista.org/fr/index.htm) (RT6_MiraScripts->USERCOM).
-
 To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm), the steps are as follows:
 - Start by formatting the pen drive as FAT32.
 - Extract the files to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
@@ -26,6 +29,7 @@ To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6
   - "user _ #.dat" (Where # = 1-4) settings, volume, treble, bass, etc.
   - "user_com.dat": common font settings and others.
   - "user_config.dat": various system configurations (where the configurations of the RT6 related to your car are located).
+- Now you need to delete a file called "System Volume Information" that is created by Windows and it will cause the process to fail, as the RT6 will check for the files, so any missing or additional file will cause a failure. to delete this file, either search online how to do so, or use 
 
 
 
