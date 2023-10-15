@@ -14,7 +14,7 @@ Now time to configure those things, and i found something called [MiraScripts](h
 ## Warning
 Follow this work at your own risk, I guarantee nothing. It is always a good idea to back up the Miroc SD card of the RT6, and take precautions when disassembling or reassembling any part of the car.
 
-All this work was done using a Windows laptop.
+All this work was done using a Windows computer.
 
 ## Firmware update
 ### RT6 firmware backup
@@ -29,7 +29,11 @@ To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6
   - "user _ #.dat" (Where # = 1-4) settings, volume, treble, bass, etc.
   - "user_com.dat": common font settings and others.
   - "user_config.dat": various system configurations (where the configurations of the RT6 related to your car are located).
-- Now you need to delete a file called "System Volume Information" that is created by Windows and it will cause the process to fail, as the RT6 will check for the files, so any missing or additional file will cause a failure. to delete this file, either search online how to do so, or use 
+- Now you need to delete a file called "System Volume Information" that is created by Windows and it will cause the process to fail, as the RT6 will check for the files, so any missing or additional file will cause a failure. to delete this file, use the "Remove Sys Vol Inf.bat"[https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Remove%20Sys%20Vol%20Inf.bat] by double clicking on it, it will ask for a drive letter, let's say the USB is mounted as G, so you need to write G: in the command line and hit enter, this will delete the file for you, hit enter again or close the command line window.
+- Remove the USB and do not re-plug it into the computer as this will make Windows create the "System Volume Information" again and you will have to delete it using the previous step.
+- Start your car (you must keep the engine running), and plug the USB into your radio-display. As this is the first time the RT6 will ask you to execute a read USERCOME data command since no user config files are in the USB, answer yes. When it is done reading it will inform you that, now unplug your USB.
+- If you plug the USB again the RT6 will ask you to execute a write USERCOME data command, if you answer yes it will write the use config files to the RT6 (here nothing will change as we have the same config files in USB and RT6), if you answer no it will ask to read those files again. 
+- Going back to your Windows machine, plug the USB, in the root you will find new files "user _ #.dat" (# for me was 4), "user_com.dat" and "user_config.dat". Save those files in your machine to get back to them if anything fails.
 
 
 
