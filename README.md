@@ -59,17 +59,26 @@ You will need:
 The installation is done, now you need to configure the RT6 if it is not well configured to fit your car. Here we have 2 options, either you have the user config files backed-up and you will write them to the RT6, or you need to do a manual configuration using MiraScripts.
 
 ### User config backed-up
-For this you will need:
+You will need:
 - your user config files.
 - RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm).
 - USB formatted as FAT32.
 - Extract the files to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
 - Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file.
 - Paste your user config files ("user _ #.dat", "user_com.dat" and "user_config.dat") to the root of the USB.
-- Remove the "System Volume Information".
+- Remove the "System Volume Information" file.
 - Start your car (you must keep the engine running) and plug the USB into your radio-display, the RT6 will ask to execute a write command, answer yes (if it asks for read answer no), if done it will ask for a reboot, you need to reboot the RT6 by long pressing the CD eject button till the display turns off, remove the USB. When it turns on everything should be configured correctly.
 
 ### Manual configuration using MiraScripts
+You will need:
+- RT6_MiraScripts and DatExplorer from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm).
+- USB formatted as FAT32.
+-  Extract the files of RT6_MiraScripts to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
+- Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file.
+- Remove the "System Volume Information" file.
+- Remove the USB and do not re-plug it.
+- Start your car (you must keep the engine running), and plug the USB into your radio-display, it will ask to execute a read command, answer yes, as this will copy the current user config files into the USB. Unplug the USB and plug it into your Windows machine.
+- 
 
 
 
