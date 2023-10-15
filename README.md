@@ -22,9 +22,10 @@ Another option is to copy some user files (configurations) that are related to y
 To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm), the steps are as follows:
 - Start by formatting the pen drive as FAT32.
 - Extract the files to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
-- Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file (script), which is responsible for reading and writing user configuration from and to the RT6. this script will read and write 3 files: * "user _ #.dat" (Where # = 1-4) settings, volume, treble, bass, etc.
-* "user_com.dat": common font settings and others.
-* "user_config.dat": various system configurations (where the configurations of the RT6 related to your car are located).
+- Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file (script), which is responsible for reading and writing user configuration from and to the RT6. this script will read and write 3 files:
+  - "user _ #.dat" (Where # = 1-4) settings, volume, treble, bass, etc.
+  - "user_com.dat": common font settings and others.
+  - "user_config.dat": various system configurations (where the configurations of the RT6 related to your car are located).
 
 
 
