@@ -16,11 +16,11 @@ Follow this work at your own risk, I guarantee nothing. It is always a good idea
 
 All this work was done using a Windows computer.
 
-## Firmware update
-### RT6 firmware backup
-If you are able to clone the internal RT6 SD card, you better do so by disassembling the radio-display (check for tutorials on how to do that, plus you will need a set of tools for the job), or get another SD card for the new firmware and keep aside the original SD card from the RT6. So when something goes wrong you will have your usual firmware and the RT6 will work safely.
+## RT6 Firmware update
+#### Firmware backup
+If you are able to clone the internal RT6 SD card, you better do so into another SD card or pen drive (clone not copy-paste), by disassembling the radio-display (check for tutorials on how to do that, plus you will need a set of tools for the job), or get another SD card for the new firmware and keep aside the original SD card from the RT6. So when something goes wrong you will have your usual firmware and the RT6 will work safely.
 
-### RT6 user file configuration backup
+#### User configuration file backup
 Another option is to copy some user files (configurations) that are related to your car using [MiraScripts](http://mira308sw.altervista.org/fr/index.htm) (RT6_MiraScripts->USERCOM).
 To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm), the steps are as follows:
 - Start by formatting the pen drive as FAT32.
@@ -34,6 +34,44 @@ To do so, you will need a pen drive (USB of size 16G minimum), and download  RT6
 - Start your car (you must keep the engine running), and plug the USB into your radio-display. As this is the first time the RT6 will ask you to execute a read USERCOME data command since no user config files are in the USB, answer yes. When it is done reading it will inform you that, now unplug your USB.
 - If you plug the USB again the RT6 will ask you to execute a write USERCOME data command, if you answer yes it will write the use config files to the RT6 (here nothing will change as we have the same config files in USB and RT6), if you answer no it will ask to read those files again. 
 - Going back to your Windows machine, plug the USB, in the root you will find new files "user _ #.dat" (# for me was 4), "user_com.dat" and "user_config.dat". Save those files in your machine to get back to them if anything fails.
+
+#### Firmware installation
+Assuming that you backed or cloned the RT6 internal SD card or the user config files.
+
+For the new firmware update, you will need:
+- pen drive, formatted as FAT32.
+- The new firmware (for me i went from 2.70 to 2.80), a new version of the RT6 update could be found online.
+- Extract the firmware content into the USB root, use "Remove Sys Vol Inf.bat" to remove the "System Volume Information" file, refer back to "User configuration file backup" to understand more.
+- Start your car (you must keep the engine running) and plug the USB into your radio-display, it will take some time to read the USB (mine took around 4 min), if all goes well it will ask for a firmware update, if you have an error saying "file corrupted or missing" probably you did not copy of content into the root correctly or the "System Volume Information" file was not deleted.
+- The update will take from 20 to 40 minutes, if it stops for a long time (in my case more than 1h), you will need to replace the internal SD card, install the new firmware, and configure the RT6.
+- Also if the installation goes correctly you will need to reconfigure the RT6 if you find any missing functionality or not the correct configurations for your car.
+
+Keep in mind that while the installation is running the RT6 will turn on and off multiple times, don't panic.
+
+#### SD card replacement
+You will need:
+- New class 10 8GB SD card(mine 16GB), you don't need to plug it into your Windows machine to format it, as it could be used directly as it is.
+- If installation fails you need to format it (FAT32 format) and remove the "System Volume Information" file.
+- Tools to open the radio-display, search online on how to disassemble the RT6 unit of your car.
+- Remove the old SD card and place the new one. Keep it safe as you might be able to get the user config files from it.
+- Go back to "Firmware installation", and follow the steps.
+  
+#### User configuration
+The installation is done, now you need to configure the RT6 if it is not well configured to fit your car. Here we have 2 options, either you have the user config files backed-up and you will write them to the RT6, or you need to do a manual configuration using MiraScripts.
+
+##### User config backed-up
+For this you will need:
+- your user config files.
+- RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm).
+- USB formatted as FAT32.
+- Extract the files to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
+- Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file.
+- Paste your user config files ("user _ #.dat", "user_com.dat" and "user_config.dat") to the root of the USB.
+- Remove the "System Volume Information".
+- Start your car (you must keep the engine running) and plug the USB into your radio-display, the RT6 will ask to execute a write command, answer yes (if it asks for read answer no), if done it will ask for a reboot, you need to reboot the RT6 by long pressing the CD eject button till the display turns off, remove the USB. When it turns on everything should be configured correctly.
+
+  ##### Manual configuration using MiraScripts
+    
 
 
 
