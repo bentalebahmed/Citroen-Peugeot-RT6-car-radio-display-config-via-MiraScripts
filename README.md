@@ -73,14 +73,15 @@ You can also use the files found [here](https://github.com/bentalebahmed/Citroen
 
 ### Manual configuration using MiraScripts
 You will need:
-- RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm) and [my custom DatExplorer]().
+- RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm) and [my custom DatExplorer](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/tree/main/Custom%20DATAEXPLOERE).
 - USB formatted as FAT32.
 -  Extract the files of RT6_MiraScripts to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
 - Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file.
 - Remove the "System Volume Information" file.
 - Remove the USB and do not re-plug it.
 - Start your car (you must keep the engine running), and plug the USB into your radio-display, it will ask to execute a read command, answer yes, as this will copy the current user config files into the USB. Unplug the USB and plug it into your Windows machine.
-- Now go back to the 
+- Now go back to your Windows machine, using my custom DatExplorer we will modify the config files.
+- 
 
 
 
