@@ -108,17 +108,30 @@ In the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is
 #### user_config.dat
 Now to the most important file, use "DATEXPLORER.exe" to load the "RT6_2xx-user_config.dat.cfg" config file using "Load Config" and the user data file "user_config.dat" using "Load DAT". the important options for me are:
 - "1.4.65:VIN": your car identification number, this should correspond to the number of your car.
-- "1.6.97:External temperature": display the external temperature on the main screen (0=hide, 1=display).
-- "1.6.98:Language selection menu": the language selection menu when clicking on the setup button (0=hide, 1=display).
-- "1.6.99:Vehicle configuration menu" the Vehicle configuration menu when clicking on the setup button, contains door selectivity, and light driving options(check all options in "1.16:Vehicle Config data") (0=hide, 1=display).
-- "1.6.102:HARM00", "1.6.102:HARM01", "1.6.102:HARM02", and "1.6.102:HARM03": display themes in display configuration when clicking on the setup button (0=hide, 1=display).
-- "1.8.135:FMUX_Config": this contains the configuration for the display keyboard buttons, for me i have this type of keyboard, check the image below,
+- "1.6.97:External temperature": display the external temperature on the main screen (0=deactivate, 1=actiate).
+- "1.6.98:Language selection menu": the language selection menu when clicking on the setup button (0=deactivate, 1=actiate).
+- "1.6.99:Vehicle configuration menu" the Vehicle configuration menu when clicking on the setup button, contains door selectivity, and light driving options(check all options in "1.16:Vehicle Config data") (0=deactivate, 1=actiate).
+- "1.6.102:HARM00", "1.6.102:HARM01", "1.6.102:HARM02", and "1.6.102:HARM03": display themes in display configuration when clicking on the setup button (0=deactivate, 1=actiate).
+- "1.8.135:FMUX_Config": this option contains the configuration for the display keyboard buttons, for me, i have this type of keyboard, check the image below,
 
   ![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/keyboard%20buttons.png)
 
-  
 
+When you do a fresh firmware update by default the buttons will not work, you will struggle a bit to find how to scroll to be able to select yes and not for the read-write user com data, also the select (enter) button to press when you scroll for yes or not. the default "1.8.135:FMUX_Config" is as follows:
 
+"01,02,03,04,05,06,07,08,0B,0D,0F,0C,12,13,11,15,16 ,17,18,00,24,25,26,27,28,29,2A,2B,19,1B,1C,1D,1E,2 0,21,22,23,09,2C,2D,2E,2F,30,31,01,03,00,00,00,00, 00,00,00,00,00,00,00,00,"
+
+and it must be changed to:
+
+"01,02,03,04,05,06,07,08,0A,22,21,1F,20,1A,1D,15,16,17,18,19,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,02,00,00,00,00,00,00,00,00,00,00,00,00,"
+
+copy and paste without "".
+- "1.14.230:VMF/VCCF": the steering wheel buttons configuration, for Citroen, change its value to 3. (Citroen=3, not sure for Peugeot).
+- "1.16:Vehicle Config data": all the options related to "1.6.99:Vehicle configuration menu". the options are self-explained and you can experiment with them, keep in mind you may activate and options that are not in your car so it will not work as it should.
+
+When you are done, click "Save" and remove the "System Volume Information" file, plug the USB drive and execute the write command, restart your RT6 with a long press (till it turns off) on the CD eject button, don't forget to remove the USB drive. Now, everything should work, and your RT6 is restored.
+
+Another option you may want to activate is the oil and cooling water temperature in addition to the tire air status (works for certain cars only), and car alerts. To do so check the option "1.12:Trip data", the sub-options are self-explained, and you can set them either to 0=deactivate or 1=actiate.
 
 
 
