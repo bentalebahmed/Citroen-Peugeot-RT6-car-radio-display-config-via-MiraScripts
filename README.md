@@ -119,7 +119,7 @@ Now to the most important file, use "DATEXPLORER.exe" to load the "RT6_2xx-user_
 
 When you do a fresh firmware update by default the buttons will not work, you will struggle a bit to find how to scroll to be able to select yes and not for the read-write user com data, also the select (enter) button to press when you scroll for yes or not. the default "1.8.135:FMUX_Config" is as follows:
 
-"01,02,03,04,05,06,07,08,0B,0D,0F,0C,12,13,11,15,16 ,17,18,00,24,25,26,27,28,29,2A,2B,19,1B,1C,1D,1E,2 0,21,22,23,09,2C,2D,2E,2F,30,31,01,03,00,00,00,00, 00,00,00,00,00,00,00,00,"
+"01,02,03,04,05,06,07,08,0B,0D,0F,0C,12,13,11,15,16,17,18,00,24,25,26,27,28,29,2A,2B,19,1B,1C,1D,1E,20,21,22,23,09,2C,2D,2E,2F,30,31,01,03,00,00,00,00,00,00,00,00,00,00,00,00,"
 
 for my car, I had to change it to:
 
