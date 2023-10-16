@@ -81,7 +81,15 @@ You will need:
 - Remove the USB and do not re-plug it.
 - Start your car (you must keep the engine running), and plug the USB into your radio-display, it will ask to execute a read command, answer yes, as this will copy the current user config files into the USB. Unplug the USB and plug it into your Windows machine.
 - Now go back to your Windows machine, using my custom DatExplorer we will modify the config files.
-- 
+
+The DatExplorer contains a set of files that defines the configuration options (parameters) that allow the modification of the previously mentioned files as a "*.dat" file. In the Custom DATAEXPLOERE, we find :
+- "RT6_2xx-user_N.dat.cfg" file, used to modify the "user _ #.dat" file.
+- "RT6_2xx-user_com.dat.cfg" file, used to modify the "user_com.dat".
+- "RT6_2xx-user_config.dat.cfg" file, used to modify the "user_config.dat".
+
+You can view the content of the files by opening them with NotePad (or any text and source code editor like VS-code), we observe that it contains a number in between "[]" like "[3]", label (contains the label of the configuration option or sub-option), and at some options, we notice a description (description of the option or sub-option) and a text as "editable=yes", this text allows for the modification of that specific option using the DATAEXPLOERE, if it not there you can not modify it, so not all options has it as we will not modify everything, but feel free to experiment (always at your own risk). if you can't modify an option value, add the "editable=yes" to that option.
+
+In order to modify the user config files, double-click on the "DATEXPLORER.exe", a window will pop up asking for an update, answer no as it never works if you answer yes. Now click on "Load Config" in the top left and search for "RT6_2xx-user_com.dat.cfg" file, then click on "Load DAT" in the top left and search for "user_com.dat" (this is your backed-up file or the ones in this repo), you will have something like [this](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/DAtExplorer.png)
 
 
 
