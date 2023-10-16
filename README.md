@@ -103,7 +103,7 @@ In order to modify the user config files, double-click on the "DATEXPLORER.exe",
 
 ![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/DAtExplorer.png)
 
-In the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is the option for the brand of your car, this option will change the boot screen for you, by default is set to Peugeot (Vehicle_Brand=4), to change it to Citroen (Vehicle_Brand=1), double click on it "Value" on the left and set it to 1. That's it for the "user_com.dat" configuration, click "Save" on the top right corner and you are done.
+In the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is the option for the brand of your car, this option will change the boot screen for you, by default it is set to Peugeot (Vehicle_Brand=4), to change it to Citroen (Vehicle_Brand=1), double click on it "Value" on the left and set it to 1. That's it for the "user_com.dat" configuration, click "Save" on the top right corner and you are done.
 
 #### user_config.dat
 Now to the most important file, use "DATEXPLORER.exe" to load the "RT6_2xx-user_config.dat.cfg" config file using "Load Config" and the user data file "user_config.dat" using "Load DAT". the important options for me are:
@@ -121,7 +121,7 @@ When you do a fresh firmware update by default the buttons will not work, you wi
 
 "01,02,03,04,05,06,07,08,0B,0D,0F,0C,12,13,11,15,16 ,17,18,00,24,25,26,27,28,29,2A,2B,19,1B,1C,1D,1E,2 0,21,22,23,09,2C,2D,2E,2F,30,31,01,03,00,00,00,00, 00,00,00,00,00,00,00,00,"
 
-and it must be changed to:
+for my car, I had to change it to:
 
 "01,02,03,04,05,06,07,08,0A,22,21,1F,20,1A,1D,15,16,17,18,19,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,02,00,00,00,00,00,00,00,00,00,00,00,00,"
 
