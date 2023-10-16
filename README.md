@@ -1,9 +1,9 @@
 
 # Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts
-Configuration files and installation guide for the RT6 car radio-display for Citroen &amp; Peugeot using MiraScripts.
+Configuration files and installation guide for the RT6 car radio-display for Citroen &amp; Peugeot using [MiraScripts](http://mira308sw.altervista.org/en/index.htm).
 
 ## My experience 
-This guide comes from my tries and experiments with my car (Citroen C4 phase 2), which has an RT6 autoradio. The problem was that from time to time the autoradio froze and i had to reboot it with the CD eject button (long press till it turns off), so as a starter I tried to update its firmware from 2.70 to 2.86 (the latest as far as i know). I did not succeed in doing that as the RT6 has an internal micro SD card which was super slow (hence the freezing problem). 
+This guide comes from my tries and experiments with my car (Citroen C4 phase 2, 2013, 1.6 diesel), which has an RT6 autoradio. The problem was that from time to time the autoradio froze and i had to reboot it with the CD eject button (long press till it turns off), so as a starter I tried to update its firmware from 2.70 to 2.86 (the latest as far as i know). I did not succeed in doing that as the RT6 has an internal micro SD card which was super slow (hence the freezing problem). 
 
 Second try, i bought a new micro SD card (8GB) and got RT6 firmware version 2.86, i ended up with the installation starting but never finishing, after lot and lot of tries that required formatting the sd card, it was damaged, and i found that from forums that sometimes going to a way higher version of the firmware won't work. 
 
@@ -69,16 +69,18 @@ You will need:
 - Remove the "System Volume Information" file.
 - Start your car (you must keep the engine running) and plug the USB into your radio-display, the RT6 will ask to execute a write command, answer yes (if it asks for read answer no), if done it will ask for a reboot, you need to reboot the RT6 by long pressing the CD eject button till the display turns off, remove the USB. When it turns on everything should be configured correctly.
 
+You can also use the files found [here](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/tree/main/Custom%20Citroen%20C4%20user%20config%20files) that i have found on the web and another one that i have configured for my car (Citroen C4 phase 2, 2013).
+
 ### Manual configuration using MiraScripts
 You will need:
-- RT6_MiraScripts and DatExplorer from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm).
+- RT6_MiraScripts from [MiraScripts](http://mira308sw.altervista.org/fr/index.htm) and [my custom DatExplorer]().
 - USB formatted as FAT32.
 -  Extract the files of RT6_MiraScripts to the root of the pen drive, the USB root should contain only: "CMD", "UPG", "POI", and "POI_VER.PI".
 - Go to "CMD" folder and delete everything except for the "RT6_USERCOM" file.
 - Remove the "System Volume Information" file.
 - Remove the USB and do not re-plug it.
 - Start your car (you must keep the engine running), and plug the USB into your radio-display, it will ask to execute a read command, answer yes, as this will copy the current user config files into the USB. Unplug the USB and plug it into your Windows machine.
-- 
+- Now go back to the 
 
 
 
