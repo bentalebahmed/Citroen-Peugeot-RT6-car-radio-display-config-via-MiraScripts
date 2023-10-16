@@ -89,7 +89,11 @@ The DatExplorer contains a set of files that defines the configuration options (
 
 You can view the content of the files by opening them with NotePad (or any text and source code editor like VS-code), we observe that it contains a number in between "[]" like "[3]", label (contains the label of the configuration option or sub-option), and at some options, we notice a description (description of the option or sub-option) and a text as "editable=yes", this text allows for the modification of that specific option using the DATAEXPLOERE, if it not there you can not modify it, so not all options has it as we will not modify everything, but feel free to experiment (always at your own risk). if you can't modify an option value, add the "editable=yes" to that option.
 
-In order to modify the user config files, double-click on the "DATEXPLORER.exe", a window will pop up asking for an update, answer no as it never works if you answer yes. Now click on "Load Config" in the top left and search for "RT6_2xx-user_com.dat.cfg" file, then click on "Load DAT" in the top left and search for "user_com.dat" (this is your backed-up file or the ones in this repo), you will have something like this: ![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/DAtExplorer.png)
+In order to modify the user config files, double-click on the "DATEXPLORER.exe", a window will pop up asking for an update, answer no as it never works if you answer yes. Now click on "Load Config" in the top left and search for "RT6_2xx-user_com.dat.cfg" file, then click on "Load DAT" in the top left and search for "user_com.dat" (this is your backed-up file or the ones in this repo), you will have something like this: 
+
+![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/DAtExplorer.png)
+
+in the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is the option for the barnd of your car, this option will change the boot screen for you, by default is set to Peugeot (Vehicle_Brand=4), to change it to Citroen (Vehicle_Brand=1), double click on it "Value" on the left and set it to 1. That's it for the "user_com.dat" configuration, click "Save" on the top right corner nad you are done.
 
 
 
