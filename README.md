@@ -98,12 +98,25 @@ The DatExplorer contains a set of files that defines the configuration options (
 
 You can view the content of the files by opening them with NotePad (or any text and source code editor like VS-code), we observe that it contains a number in between "[]" like "[3]", label (contains the label of the configuration option or sub-option), and at some options, we notice a description (description of the option or sub-option) and a text as "editable=yes", this text allows for the modification of that specific option using the DATAEXPLOERE, if it not there you can not modify it, so not all options has it as we will not modify everything, but feel free to experiment (always at your own risk). if you can't modify an option value, add the "editable=yes" to that option.
 
+#### user_com.dat
 In order to modify the user config files, double-click on the "DATEXPLORER.exe", a window will pop up asking for an update, answer no as it never works if you answer yes. Now click on "Load Config" in the top left and search for "RT6_2xx-user_com.dat.cfg" file, then click on "Load DAT" in the top left and search for "user_com.dat" (this is your backed-up file or the ones in this repo), you will have something like this: 
 
 ![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/DAtExplorer.png)
 
-in the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is the option for the barnd of your car, this option will change the boot screen for you, by default is set to Peugeot (Vehicle_Brand=4), to change it to Citroen (Vehicle_Brand=1), double click on it "Value" on the left and set it to 1. That's it for the "user_com.dat" configuration, click "Save" on the top right corner nad you are done.
+In the "user_com.dat", you will find the option "1.4.54: Vehicle_Brand" which is the option for the brand of your car, this option will change the boot screen for you, by default is set to Peugeot (Vehicle_Brand=4), to change it to Citroen (Vehicle_Brand=1), double click on it "Value" on the left and set it to 1. That's it for the "user_com.dat" configuration, click "Save" on the top right corner and you are done.
 
+#### user_config.dat
+Now to the most important file, use "DATEXPLORER.exe" to load the "RT6_2xx-user_config.dat.cfg" config file using "Load Config" and the user data file "user_config.dat" using "Load DAT". the important options for me are:
+- "1.4.65:VIN": your car identification number, this should correspond to the number of your car.
+- "1.6.97:External temperature": display the external temperature on the main screen (0=hide, 1=display).
+- "1.6.98:Language selection menu": the language selection menu when clicking on the setup button (0=hide, 1=display).
+- "1.6.99:Vehicle configuration menu" the Vehicle configuration menu when clicking on the setup button, contains door selectivity, and light driving options(check all options in "1.16:Vehicle Config data") (0=hide, 1=display).
+- "1.6.102:HARM00", "1.6.102:HARM01", "1.6.102:HARM02", and "1.6.102:HARM03": display themes in display configuration when clicking on the setup button (0=hide, 1=display).
+- "1.8.135:FMUX_Config": this contains the configuration for the display keyboard buttons, for me i have this type of keyboard, check the image below,
+
+  ![](https://github.com/bentalebahmed/Citroen-Peugeot-RT6-car-radio-display-config-via-MiraScripts/blob/main/Figs/keyboard%20buttons.png)
+
+  
 
 
 
