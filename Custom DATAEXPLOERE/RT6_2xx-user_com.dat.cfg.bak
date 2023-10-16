@@ -1,0 +1,507 @@
+[3]
+label=GeneralData
+description=Some general configurations
+
+[4]
+label=SupervisorData
+description=Parameters for unit control, 1.4.54 Vehicle_Brand=1 for Citroen
+
+[49]
+label=Last_Source
+
+[50]
+label=No source status
+
+[51]
+label=Last_Mode
+
+[53]
+label=PSA_pass
+
+[54]
+label=Vehicle_Brand
+editable=yes
+
+[55]
+label=Current_Language
+
+[56]
+label=CD_SW_Version
+type=TEXT
+
+[57]
+label=Last_Main val
+
+[58]
+label=Last_Source_Priority
+
+[60]
+label=Usage_time
+
+[944]
+label=Src_Radio_SchedPos
+
+[945]
+label=Src_Media_SchedPos
+
+[946]
+label=Src_Radio_Priority
+
+[947]
+label=Src_Media_Priority
+
+[5]
+label=AgendaData
+description=Parameters for phonebook usage
+
+[65]
+label=Selected user
+
+[67]
+label=Previous selected user
+
+[68]
+type=ARRAY[4]
+
+[71]
+type=ARRAY[4]
+
+[72]
+label=Default users names
+description=Default name for new user creation.
+editable=yes
+type=ARRAY[4]
+
+[6]
+label=AudioCommonData 
+description=Common parameters for audio control
+
+[87]
+type=HEX
+
+[92]
+label=Auxiliary_Input
+
+[7]
+label=CD data
+description=Configurations for audio CD play
+
+[8]
+label=Clock data
+description=Configurations time clock
+
+[130]
+label=Time_12_24
+
+[132]
+label=GPS_Slaved
+
+[135]
+type=STRUCT
+
+[S135]
+1=f135a,1,0
+2=f135b,1,1
+3=f135c,1,2
+4=f135d,1,3
+5=f135e,1,4
+6=f135f,2,6
+7=f135g,1,8
+
+[f135a]
+label=Second
+
+[f135b]
+label=Minute
+
+[f135c]
+label=Hour
+
+[f135d]
+label=Day
+
+[f135e]
+label=Month
+
+[f135f]
+label=Year
+
+[f135g]
+label=Day of week
+
+[136]
+type=STRUCT
+
+[S136]
+1=f136a,4,0
+2=f136b,4,4
+3=f136c,4,8
+4=f136d,4,12
+5=f136e,4,16
+6=f136f,4,20
+7=f136g,4,24
+8=f136h,4,28
+9=f136i,4,32
+
+[f136a]
+label=Second
+
+[f136b]
+label=Minute
+
+[f136c]
+label=Hour
+
+[f136d]
+label=Day
+
+[f136e]
+label=Month
+
+[f136f]
+label=Year
+
+[f136g]
+label=Day of week
+
+[f136h]
+label=Day of year
+
+[f136i]
+type=SIGNED
+
+[10]
+label=KeyBoardData 
+description=Configurations front panel keyboard
+
+[162]
+label=EcallPush
+
+[163]
+label=BrkdwnPush 
+
+[165]
+label=FAN_Triggered
+
+[167]
+label=FP_Debug_info
+type=HEX
+
+[11]
+label=MenuData 
+description=Configurations for main menu (not used)
+
+[180]
+label=TTS volume level
+
+[12]
+label=NavigationCommonData 
+description=Configurations for navigation
+
+[193]
+label=GUIDINPROGRESS
+
+[194]
+label=m_DestinationList 
+
+[195]
+label=m_WayPointList
+
+[196]
+label=Export_Consign_CMB 
+
+[201]
+label=Altitude 
+
+[202]
+label=m_eNav_Specific_HMI 
+
+[203]
+label=WayZoneType
+
+[13]
+label=PhoneCommonData 
+description=Configurations for integrated GSM phone
+
+[209]
+label=GPRS status
+
+[210]
+label=Vocal box
+
+[213]
+label=SMS centre
+
+[245]
+label=Configuration data
+
+[246]
+type=ARRAY[10]
+
+[247]
+type=ARRAY[10]
+
+[250]
+label=SIM card table
+
+[15]
+label=TTSData
+description=Configurations for Text To Speach
+
+[275]
+label=Other voice message enabled
+
+[16]
+label=TripData
+description=Configurations for trip pages
+
+[294]
+label=Last TRIP page
+
+[17]
+label=TunerCommonData 
+description=Configurations for radio tuner
+
+[313]
+label=TA active
+
+[314]
+label=PTY active
+
+[18]
+label=VANData
+description=Configurations for Vehicle Area Network
+
+[329]
+label=DSG
+
+[333]
+label=Reset tire underpressure
+editable=yes
+
+[19]
+label=VideoData
+description=Configurations for external video input
+
+[20]
+label=SettingsData 
+description=Configurations for ??? (not used)
+
+[371]
+type=ARRAY[4]
+
+[21]
+label=AIRCData
+description=Configurations for Air Condition control
+
+[389]
+type=ARRAY[4]
+
+[390]
+type=ARRAY[4]
+
+[23]
+label=DisplayCommonData 
+description=Configurations for display
+
+[434]
+label=Conf
+
+[24]
+label=DiagCommonData
+description=Diagnostic and general configurations
+
+[1009]
+label=Telecoding_entry
+
+[27]
+label=DispConfCommonData 
+description=Configurations for display
+
+[641]
+type=HEX
+
+[28]
+label=JukeboxCommonData 
+description=Configurations for jukebox
+
+[720]
+label=Last album
+
+[721]
+label=Last song
+
+[722]
+label=Pause position min
+
+[723]
+label=Pause position sec
+
+[724]
+label=Active play list
+
+[725]
+label=Erase all jukebox content
+
+[726]
+label=Play info
+
+[30]
+label=USBCommonData
+description=Configurations for mp3 play from USB 
+
+[772]
+label=USB info (last connected device)
+
+[788]
+label=Play info
+
+[793]
+type=SIGNED
+
+[852]
+label=USB ID info (partition table)
+
+[31]
+label=DVD_ROMCommonData 
+description=Configurations for mp3 play from DVD (only some RT5)
+
+[866]
+label=play info
+description=Data about last songs played
+
+[896]
+label=ECNRCommonData
+description=Configurations for Echo Cancellation Noise Reduction (only for RT5 with BT)
+
+[891]
+type=HEX
+
+[897]
+label=BTCommonData
+description=Configurations for BluTooth (only for RT5)
+
+[913]
+label=Device name
+
+[914]
+label=BT is on
+
+[915]
+label=Auto authenticate
+
+[916]
+label=bt_microphone_DAC_gain 
+
+[917]
+label=bt_microphone_ADC_gain
+
+[918]
+label=Pass key
+
+[898]
+label=TunerSiriusCommonData
+description=Configurations for satellite Sirius tuner (only some RT5)
+
+[930]
+label=Security_code
+
+[899]
+label=IpodData
+
+[993]
+label=Validity
+
+[901]
+label=TunerDABData
+
+[1105]
+label=TPEG_enabled
+
+[561]
+label=Saved name
+
+[595]
+label=GPS coord
+type=HEX
+
+[625]
+label=City
+
+[626]
+label=Address
+
+[627]
+type=HEX
+
+[629]
+label=Civic number
+
+[630]
+type=HEX
+
+[631]
+type=HEX
+
+[610]
+label=GPS coord
+type=HEX
+
+[612]
+label=Phone number
+
+[613]
+label=Phone int. prefix
+
+[497]
+label=Outgoing
+type=ARRAY[30]
+
+[498]
+label=Incoming 
+type=ARRAY[30]
+
+[499]
+label=Phone number
+type=ARRAY[30]
+
+[500]
+label=Total last calls
+
+[514]
+label=SIM number
+
+[516]
+label=PIN1
+
+[525]
+label=Memo flag
+
+[547]
+label=GPS coord
+type=HEX
+
+[817]
+label=Volume name
+
+[818]
+label=Cluster size
+type=SIGNED
+
+[819]
+label=Totale size
+type=SIGNED
+
+[820]
+label=Free space
+type=SIGNED
+
+[821]
+type=SIGNED
+
+[822]
+type=SIGNED
+
+[790]
+type=SIGNED
+

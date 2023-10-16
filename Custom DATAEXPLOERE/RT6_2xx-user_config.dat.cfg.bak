@@ -1,0 +1,488 @@
+[3]
+label=General data
+description=Some general configurations
+
+[4]
+label=Supervisor data
+description=Parameters for unit control
+
+[5]
+label=Audio data
+description=Common parameters for audio control
+
+[6]
+label=Display data
+description=Common parameters for display screen
+
+[7]
+label=Display Config data
+description=Configurations for display screen
+
+[8]
+label=Keyboard data
+description=Configurations front panel keyboard
+
+[9]
+label=Navigation data
+description=Configurations for navigation
+
+[10]
+label=Phone data
+description=Configurations for integrated GSM phone
+
+[11]
+label=TMC data
+description=Configurations for Traffic Message Channel
+
+[12]
+label=Trip data
+description=Configurations for trip pages
+
+[13]
+label=Tuner data
+description=Configurations for radio tuner
+
+[14]
+label=VAN data
+description=Configurations for Vehicle Area Network, VMF/VCCF = 3 for Citroen
+
+[15]
+label=A/C data
+description=Configurations for Air Condition control
+
+[16]
+label=Vehicle Config data
+description=Configurations for Vehicle options. Requires 1.6.99 to be set to 1
+
+[17]
+label=Diag data
+description=Diagnostic and general configurations
+
+[18]
+label=Jukebox data
+description=Configurations for jukebox
+
+[19]
+label=ECNR data
+description=Configurations for Echo Cancellation Noise Reduction (only for RT5 with BT)
+
+[20]
+label=Tuner DAB data
+description=Configurations for DAB tuner
+
+[21]
+label=Date Clock data
+description=Configurations for clock
+
+[22]
+label=CDC data
+description=Configurations for CD Changer
+
+[23]
+label=AAS data
+description=Configurations for AAS
+
+[24]
+label=MAP data
+description=Configurations for Maps
+
+[25]
+label=ECNR_ARKAMYS_config_data
+
+[49]
+label=Video speed
+description=Vehicle speed [km/h] upper limit for enabled video input
+editable=yes
+
+[50]
+label=Speed config
+description=
+
+[65]
+label=VIN 
+description=Vehicle Identification Number, 17 characters
+editable=yes
+
+[66]
+label=retract_disp_config
+editable=yes
+
+[81]
+label=Audio_config
+description=0=???  1=HiFi  2=HiFiCAN  3=???
+editable=yes
+
+[82]
+label=Volume curve AVC
+editable=yes
+
+[84]
+label=HiFi present
+type=STRUCT
+
+[S84]
+1=f84a,6,0
+2=f84b,6,6
+3=f84c,6,12
+4=f84d,6,18
+
+[f84a]
+label=Front left
+description=Equalizer values for front left speaker
+type=HEX
+editable=yes
+
+[f84b]
+label=Front right
+description=Equalizer values for front right speaker
+type=HEX
+editable=yes
+
+[f84c]
+label=Rear left
+description=Equalizer values for rear left speaker
+type=HEX
+editable=yes
+
+[f84d]
+label=Rear right
+description=Equalizer values for rear right speaker
+type=HEX
+editable=yes
+
+[85]
+label=Front Beep Volume
+description=[range 1-8] Park assist and radar alert beep volume when Audio_config = 0 or 3
+editable=yes
+
+[86]
+label=Rear Beep Volume 
+description=[range 1-8] Park assist and radar alert beep volume when Audio_config = 0 or 3
+editable=yes
+
+[88]
+label=Hifi Front Beep Volume
+description=[range 1-8] Park assist and radar alert beep volume when Audio_config = 1 or 4
+editable=yes
+
+[89]
+label=Hifi Rear Beep Volume 
+description=[range 1-8] Park assist and radar alert beep volume when Audio_config = 1 or 4
+editable=yes
+
+[90]
+label=Arkamis parameters
+type=HEX
+
+[97]
+label=External temperature
+description=enable external temperature on main page
+editable=yes
+
+[98]
+label=Language selection in setup menu
+editable=yes
+
+[99]
+label=Vehicle configuration in setup menu
+editable=yes
+
+[102]
+label=enable HARM00
+description=enable use of theme HARM00
+editable=yes
+
+[103]
+label=enable HARM01
+description=enable use of theme HARM01
+editable=yes
+
+[104]
+label=enable HARM02
+description=enable use of theme HARM02
+editable=yes
+
+[105]
+label=enable HARM03
+description=enable use of theme HARM03
+editable=yes
+
+[113]
+type=HEX
+
+[114]
+type=HEX
+
+[116]
+label=Screen_Offset
+
+[129]
+label=Backlight
+type=HEX
+
+[132]
+label=FAN Current Limits
+type=HEX
+
+[133]
+label=FAN paarameters
+type=HEX
+
+[134]
+label=Volume_Threshold_FAN
+
+[135]
+label=FMUX_Config
+type=HEX
+editable=yes
+
+[136]
+label=Nom_FAN_PWM
+
+[145]
+label=Conf export CMB
+editable=yes
+
+[146]
+label=Conf zoom CMB
+editable=yes
+
+[147]
+label=Service waypoint
+
+[148]
+type=HEX
+
+[152]
+label=Nav_export_Unicode
+
+[178]
+label=TMC_Validity_Date
+type=HEX
+
+[193]
+label=Oil/water temperature on screen 1
+editable=yes
+
+[194]
+label=Oil/water temperature on screen 2
+editable=yes
+
+[195]
+label=List of alerts in setup menu
+editable=yes
+
+[196]
+label=TRIP menu present
+editable=yes
+
+[225]
+label=CDT
+editable=yes
+
+[228]
+label=Hydr_Susp_Frame
+editable=yes
+
+[229]
+label=EMF
+editable=yes
+
+[230]
+label=VMF/VCCF
+description=Configure type of steering wheel commands
+editable=yes
+
+[241]
+label=AIRC menu present
+editable=yes
+
+[259]
+label=Back_Flap unlocking submenu in setup menu
+
+[263]
+label=Dynamic BiXenon and cornerlights submenu in setup menu
+
+[265]
+label=Automatic parking brake submenu in setup menu
+
+[266]
+label=Follow me home light submenu in setup menu
+
+[268]
+label=Rear wiper with reverse gear submenu in setup menu
+
+[271]
+label=Daytime driving light submenu in setup menu
+
+[279]
+label=VMFAlerts
+
+[283]
+label=Welcome_Lighting
+
+[284]
+label=Motorway_Lighting
+
+[285]
+label=Back_Flap
+
+[286]
+label=Overtake_Help_Menu
+
+[287]
+label=Audio_Harm
+
+[416]
+label=Speed_Limiter_Stop
+
+[417]
+label=Driver_Doors_Selectivity
+
+[418]
+label=Other_Doors_Selectivity
+editable=yes
+
+[419]
+label=Speed_limiter_conf
+
+[420]
+label=Rear_Park_Menu
+
+[421]
+label=Ambience_Lightning_Level
+
+[289]
+type=HEX
+
+[292]
+label=CalHWAppli
+
+[294]
+type=HEX
+
+[295]
+type=HEX
+
+[298]
+type=HEX
+
+[300]
+type=HEX
+
+[301]
+type=HEX
+
+[302]
+type=HEX
+
+[304]
+type=HEX
+
+[306]
+type=HEX
+
+[307]
+label=CalX7
+
+[313]
+type=HEX
+
+[314]
+type=HEX
+
+[317]
+label=Premium_conf
+editable=yes
+
+[318]
+label=CalSupplier_new
+
+[319]
+label=CalSystem_new
+
+[337]
+label=p_far_out_amplify
+
+[338]
+label=p_nr_attenuation
+
+[339]
+label=p_ec_block_delay
+
+[353]
+label=DAB
+
+[354]
+label=Slideshow_speed_limit
+
+[355]
+label=Antenna_config
+
+[356]
+label=Announcements_enabled
+
+[401]
+label=AAS_Rear_Present
+
+[402]
+label=AAS_Front_Present
+
+[403]
+label=AVR_Contrast
+
+[404]
+label=AVR_Brightness
+
+[405]
+label=AVR_Chroma
+
+[406]
+label=AVR_Picture_Template
+
+[433]
+label=DRM
+
+[434]
+label=Min_range
+
+[435]
+label=Min_margin_low
+
+[436]
+label=Min_margin_high
+
+[437]
+label=Circle_ratio_factor
+
+[448]
+label=CalHWAppli_new
+
+[449]
+label=CalVehicleType_new
+
+[450]
+label=CalEvolIndex_new
+type=HEX
+
+[451]
+label=CalDate_new
+type=HEX
+
+[452]
+label=CalSite_new
+
+[453]
+label=CalSignature_new
+type=HEX
+
+[454]
+label=CalX7_new
+
+[455]
+label=CalFilePSARef_new
+type=HEX
+
+[465]
+label=ec_nr_data
+type=HEX
